@@ -9,7 +9,7 @@ ruuvi.on('found', (tag) => {
 
     const body = { message: `temperature: ${data.temperature}` };
 
-    fetch('http://192.168.169.156:9000/api/chats', {
+    fetch('http://95.216.143.29:9000/api/chats', {
       method: 'post',
       body: JSON.stringify(body),
       headers: { 'Content-Type': 'application/json' },
